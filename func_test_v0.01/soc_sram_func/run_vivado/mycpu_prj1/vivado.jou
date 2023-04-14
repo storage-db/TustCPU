@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Apr  6 20:07:58 2023
+# Process ID: 12972
+# Current directory: C:/Users/wanghuasheng/Desktop/nscscc-group/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9712 C:\Users\wanghuasheng\Desktop\nscscc-group\func_test_v0.01\soc_sram_func\run_vivado\mycpu_prj1\mycpu.xpr
+# Log file: C:/Users/wanghuasheng/Desktop/nscscc-group/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/vivado.log
+# Journal file: C:/Users/wanghuasheng/Desktop/nscscc-group/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/wanghuasheng/Desktop/nscscc-group/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.xpr
+update_compile_order -fileset sources_1
+add_files {C:/Users/wanghuasheng/Desktop/SampleCPU-master/ID.v C:/Users/wanghuasheng/Desktop/SampleCPU-master/lib/decoder_6_64.v C:/Users/wanghuasheng/Desktop/SampleCPU-master/EX.v C:/Users/wanghuasheng/Desktop/SampleCPU-master/IF.v C:/Users/wanghuasheng/Desktop/SampleCPU-master/mycpu_top.v C:/Users/wanghuasheng/Desktop/SampleCPU-master/lib/div.v C:/Users/wanghuasheng/Desktop/SampleCPU-master/lib/mul/fa.v C:/Users/wanghuasheng/Desktop/SampleCPU-master/lib/decoder_5_32.v C:/Users/wanghuasheng/Desktop/SampleCPU-master/lib/mmu.v C:/Users/wanghuasheng/Desktop/SampleCPU-master/lib/mul/add.v C:/Users/wanghuasheng/Desktop/SampleCPU-master/WB.v C:/Users/wanghuasheng/Desktop/SampleCPU-master/hilo_reg.v C:/Users/wanghuasheng/Desktop/SampleCPU-master/lib/alu.v C:/Users/wanghuasheng/Desktop/SampleCPU-master/lib/mul/mul.v C:/Users/wanghuasheng/Desktop/SampleCPU-master/mycpu_core.v C:/Users/wanghuasheng/Desktop/SampleCPU-master/CTRL.v C:/Users/wanghuasheng/Desktop/SampleCPU-master/lib/defines.vh C:/Users/wanghuasheng/Desktop/SampleCPU-master/lib/regfile.v C:/Users/wanghuasheng/Desktop/SampleCPU-master/MEM.v}
+update_compile_order -fileset sources_1
+generate_target all [get_files C:/Users/wanghuasheng/Desktop/nscscc-group/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll.xci]
+export_ip_user_files -of_objects [get_files C:/Users/wanghuasheng/Desktop/nscscc-group/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/wanghuasheng/Desktop/nscscc-group/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll.xci] -directory C:/Users/wanghuasheng/Desktop/nscscc-group/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/wanghuasheng/Desktop/nscscc-group/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.ip_user_files -ipstatic_source_dir C:/Users/wanghuasheng/Desktop/nscscc-group/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Modeltech_pe_edu_10.4a/xilinx_lib} {questa=C:/Users/wanghuasheng/Desktop/nscscc-group/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/questa} {riviera=C:/Users/wanghuasheng/Desktop/nscscc-group/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/riviera} {activehdl=C:/Users/wanghuasheng/Desktop/nscscc-group/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_fileset -blockset clk_pll
+set_property top clk_pll [get_fileset clk_pll]
+move_files -fileset [get_fileset clk_pll] [get_files -of_objects [get_fileset sources_1] C:/Users/wanghuasheng/Desktop/nscscc-group/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll.xci]
+generate_target all [get_files C:/Users/wanghuasheng/Desktop/nscscc-group/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/data_ram/data_ram.xci]
+export_ip_user_files -of_objects [get_files C:/Users/wanghuasheng/Desktop/nscscc-group/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/data_ram/data_ram.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/wanghuasheng/Desktop/nscscc-group/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/data_ram/data_ram.xci] -directory C:/Users/wanghuasheng/Desktop/nscscc-group/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/wanghuasheng/Desktop/nscscc-group/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.ip_user_files -ipstatic_source_dir C:/Users/wanghuasheng/Desktop/nscscc-group/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Modeltech_pe_edu_10.4a/xilinx_lib} {questa=C:/Users/wanghuasheng/Desktop/nscscc-group/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/questa} {riviera=C:/Users/wanghuasheng/Desktop/nscscc-group/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/riviera} {activehdl=C:/Users/wanghuasheng/Desktop/nscscc-group/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_fileset -blockset data_ram
+set_property top data_ram [get_fileset data_ram]
+move_files -fileset [get_fileset data_ram] [get_files -of_objects [get_fileset sources_1] C:/Users/wanghuasheng/Desktop/nscscc-group/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/data_ram/data_ram.xci]
+generate_target all [get_files C:/Users/wanghuasheng/Desktop/nscscc-group/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/inst_ram/inst_ram.xci]
+export_ip_user_files -of_objects [get_files C:/Users/wanghuasheng/Desktop/nscscc-group/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/inst_ram/inst_ram.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/wanghuasheng/Desktop/nscscc-group/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/inst_ram/inst_ram.xci] -directory C:/Users/wanghuasheng/Desktop/nscscc-group/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/wanghuasheng/Desktop/nscscc-group/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.ip_user_files -ipstatic_source_dir C:/Users/wanghuasheng/Desktop/nscscc-group/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Modeltech_pe_edu_10.4a/xilinx_lib} {questa=C:/Users/wanghuasheng/Desktop/nscscc-group/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/questa} {riviera=C:/Users/wanghuasheng/Desktop/nscscc-group/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/riviera} {activehdl=C:/Users/wanghuasheng/Desktop/nscscc-group/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_fileset -blockset inst_ram
+set_property top inst_ram [get_fileset inst_ram]
+move_files -fileset [get_fileset inst_ram] [get_files -of_objects [get_fileset sources_1] C:/Users/wanghuasheng/Desktop/nscscc-group/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/inst_ram/inst_ram.xci]
+launch_run {clk_pll_synth_1 data_ram_synth_1 inst_ram_synth_1}
+wait_on_run clk_pll_synth_1
+
+wait_on_run clk_pll_synth_1
+wait_on_run data_ram_synth_1
+
+wait_on_run clk_pll_synth_1
+wait_on_run data_ram_synth_1
+wait_on_run inst_ram_synth_1
+
+launch_simulation
+source tb_top.tcl
+run all
+close_sim
