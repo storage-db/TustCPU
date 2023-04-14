@@ -1,2 +1,2 @@
 # TustCPU
-computer composition for tust
+computer composition for tust for you
